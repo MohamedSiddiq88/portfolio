@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+/* whole page */
+body {
+  background-color: #333;
+  color: #fff;
+  /* font-family: 'Poppins'; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar */
+.navbar {
+  cursor: pointer;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+}
+
+
+
+/* home */
+.home {
+  height: 110vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* about */
+.about {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* services */
+.services {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* portfolio */
+
+.details-container{
+ background-color: #121212;
+ border-radius: 0.5rem;
+ padding: 30px;
+}
+
+.portfolio {
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .img-fluid {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contact */
+
+.thank-you {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collab-col {
+  width: 48%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea.form-input {
+  height: 150px;
+}
+
+.btn-submit {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #555;
+}
+
+.contact-btn {
+  display: flex;
+  margin: 0 auto;
+  border-width: 2px;
+}
+
+.transparent-input {
+  background-color: transparent;
+  border: none;
+  border: 2px solid grey;
+  color: #fff;
+}
+
+/* common */
+.heading {
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-size: 45px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .col-lg-5 {
+    margin-top: 20px;
   }
+
+  .portfolio .img-fluid {
+    height: auto;
+    width: 100%;
+  }
+
+  .form-row {
+    flex-wrap: wrap;
+  }
+
+  .collab-col {
+    width: 100%;
+  }
+  
+.name-input{
+  margin-bottom: 20px;
+}
+
+.contact-info{
+  margin-top: 50px;
+}
+
 }
