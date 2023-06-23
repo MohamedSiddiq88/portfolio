@@ -40,7 +40,7 @@ const Portfolio = () => {
       id: 1,
       image: project1Image,
       name: 'Pizza Delivery',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, enim eget commodo rutrum.',
+      description: 'Pizza Delivery is a web application that allows users to order pizzas online. It is built using Express.js for the backend, React for the frontend, and MongoDB for the database. The application provides a user-friendly interface for browsing through a variety of pizza options, customizing toppings, and placing orders. The backend handles the order processing and communicates with the database to store and retrieve order details. The frontend is built with React and styled using Bootstrap 5 to ensure a responsive and visually appealing design. Pizza Delivery offers a seamless and convenient way for users to satisfy their pizza cravings with just a few clicks!',
       githubFrontendLink: 'https://github.com/MohamedSiddiq88/pizza-delivery/tree/webcode',
       githubBackendLink: 'https://github.com/MohamedSiddiq88/pizza-express',
       frontendLink: 'https://pizza-express-rho.vercel.app/',
