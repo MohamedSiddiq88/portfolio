@@ -130,7 +130,28 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="contact-info">
+            <div className='row'>
+              <div className='col'>
+                <div className='logo-container'>
+                <div className='my-logo'>
+                <i class="fa-solid fa-s my-logo-1"></i>
+                <i class="fa-solid fa-s my-logo-2"></i>
+                <i class="fa-solid fa-s my-logo-3"></i>
+                <i class="fa-solid fa-s my-logo-4"></i>
+                <i class="fa-solid fa-s my-logo-5"></i>
+                {/* <p className='my-logo-1'>{`<s>`}</p>
+                <p className='my-logo-2'>{`<s>`}</p>
+                <p className='my-logo-3'>{`<s>`}</p>
+                <p className='my-logo-4'>{`<s>`}</p>
+                <p className='my-logo-5'>{`<s>`}</p> */}
+
+
+                
+                </div>
+                </div>
+              </div>
+              <div className='col'>
+              <div className="contact-info">
               <h3>Contact Information</h3>
               <ul>
                 <li>
@@ -148,6 +169,8 @@ const Contact = () => {
                   <a href="https://github.com/MohamedSiddiq88">GitHub Profile</a>
                 </li>
               </ul>
+            </div>
+              </div>
             </div>
           </>
         )}

@@ -29,6 +29,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.image-container{
+  position: relative;
+}
+.over{
+  position: absolute;
+  top:0;
+}
+.profile-image{
+  border-radius: 50%;
+  filter: blur(100px);
+}
+.profile-image1{
+  border-radius: 50%;
 }
 
 /* about */
@@ -72,6 +88,63 @@ body {
 }
 
 /* contact */
+
+.logo-container{
+  /* border: 1px solid blue; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-logo{
+  /* border: 1px solid blue; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  position: relative;
+}
+
+.my-logo-1{
+  color: #d9ed92;
+  position: absolute;
+  left:0;
+  top:12px;
+  
+}
+
+.my-logo-2{
+  color: #99d98c;
+  position: absolute;
+  left: 3px;
+  top:9px;
+
+}
+
+.my-logo-3{
+  color: #34a0a4;
+  position: absolute;
+  left: 6px;
+  top:6px;
+
+}
+
+.my-logo-4{
+  color: #1e6091;
+  position: absolute;
+  left: 9px;
+  top:3px;
+
+}
+
+.my-logo-5{
+  color: #fff;
+  position: absolute;
+  left: 12px;
+  top:0px;
+}
 
 .thank-you {
   font-size: 24px;
@@ -174,6 +247,10 @@ textarea.form-input {
 }
 
 .contact-info{
+  margin-top: 50px;
+}
+
+.logo-container{
   margin-top: 50px;
 }
 

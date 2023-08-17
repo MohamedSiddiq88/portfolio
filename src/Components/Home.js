@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import profileImage from '../passport size phone.png';
+import profileImage from '../passport size phone (1)(1).png';
 import "../App.css"
 
 const Home = () => {
@@ -12,10 +12,16 @@ const Home = () => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <h1>Welcome to My Portfolio</h1>
-            <p className="lead">Hi, I'm Mohamed Siddiq, a MERN stack developer.</p>
+            <h3 className="lead">Hi, I'm Mohamed Siddiq, a MERN stack developer.</h3>
           </div>
           <div className="col-lg-5">
-            <img src={profileImage} alt="Profile" className="img-fluid" />
+            <div className='image-container'>
+            <img src={profileImage} alt="Profile" className="img-fluid profile-image" />
+            <div className='over'>
+            <img src={profileImage} alt="Profile" className="img-fluid profile-image1"/>
+              
+            </div>
+            </div>
           </div>
         </div>
       </div>
