@@ -11,6 +11,10 @@ body {
   z-index: 1;
 }
 
+.logo-image{
+  height: 7vh;
+}
+
 .nav-link {
   color: #fff;
 }
@@ -33,10 +37,14 @@ body {
 }
 
 .image-container{
+  /* border: 1px solid blue; */
   position: relative;
+  
 }
 .over{
+  /* border: 1px solid red; */
   position: absolute;
+  width: 100%;
   top:0;
 }
 .profile-image{
@@ -99,6 +107,7 @@ body {
 
 .my-logo{
   /* border: 1px solid blue; */
+  margin-top: 90px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -154,6 +163,7 @@ body {
 }
 
 .contact {
+  
   height: 110vh;
   display: flex;
   justify-content: center;
@@ -211,6 +221,10 @@ textarea.form-input {
   color: #fff;
 }
 
+.contact-info{
+  margin-top: 30px;
+}
+
 /* common */
 .heading {
   font-family: 'Poppins';
@@ -219,7 +233,7 @@ textarea.form-input {
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -251,7 +265,10 @@ textarea.form-input {
 }
 
 .logo-container{
-  margin-top: 50px;
+  display: none;
+}
+.image-container-row{
+  text-align: center;
+}
 }
 
-}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import logoImage from './my-logo.png'
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg navbar-dark bg-dark ${isNavOpen ? 'navbar-open' : ''}`}>
       <div className="container bg-dark">
         <Link to="home" smooth={true} duration={500} className="navbar-brand">
-          My Portfolio
+        <img src={logoImage} alt="Logo" className="logo-image" />
         </Link>
         <button
           className={`navbar-toggler ${isNavOpen ? 'collapsed' : ''}`}

@@ -77,7 +77,7 @@ const Portfolio = () => {
           {projects.map((project) => (
             <div className="project-container" key={project.id}>
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-5">
                   <div className="project-image">
                     <img src={project.image} alt={project.name} className="img-fluid" />
                   </div>

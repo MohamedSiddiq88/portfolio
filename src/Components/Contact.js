@@ -17,6 +17,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    //  "Thank you" message
+    setShowThankYou(true);
 
     try {
       const response = await fetch('https://portfolio-express-sand.vercel.app/mail/sendmail', {
@@ -37,8 +39,7 @@ const Contact = () => {
           message: '',
         });
 
-        //  "Thank you" message
-        setShowThankYou(true);
+        
       } else {
         console.log('Failed to send email');
       }
@@ -131,7 +132,7 @@ const Contact = () => {
             </div>
 
             <div className='row'>
-              <div className='col'>
+              <div className='col-lg-6'>
                 <div className='logo-container'>
                 <div className='my-logo'>
                 <i class="fa-solid fa-s my-logo-1"></i>
@@ -139,18 +140,12 @@ const Contact = () => {
                 <i class="fa-solid fa-s my-logo-3"></i>
                 <i class="fa-solid fa-s my-logo-4"></i>
                 <i class="fa-solid fa-s my-logo-5"></i>
-                {/* <p className='my-logo-1'>{`<s>`}</p>
-                <p className='my-logo-2'>{`<s>`}</p>
-                <p className='my-logo-3'>{`<s>`}</p>
-                <p className='my-logo-4'>{`<s>`}</p>
-                <p className='my-logo-5'>{`<s>`}</p> */}
-
-
+                
                 
                 </div>
                 </div>
               </div>
-              <div className='col'>
+              <div className='col-lg-6'>
               <div className="contact-info">
               <h3>Contact Information</h3>
               <ul>
