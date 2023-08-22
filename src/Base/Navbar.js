@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-dark bg-dark ${isNavOpen ? 'navbar-open' : ''}`}>
-      <div className="container bg-dark">
+    <nav className={`navbar navbar-expand-lg  ${isNavOpen ? 'navbar-open' : ''}`}>
+      <div className="container ">
         <Link to="home" smooth={true} duration={500} className="navbar-brand">
         <img src={logoImage} alt="Logo" className="logo-image" />
         </Link>
         <button
-          className={`navbar-toggler ${isNavOpen ? 'collapsed' : ''}`}
+          className={`navbar-toggler navbar-dark  ${isNavOpen ? 'collapsed' : ''}`}
           type="button"
           onClick={toggleNav}
           aria-label="Toggle navigation"
