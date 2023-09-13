@@ -74,6 +74,7 @@ body {
 .about {
   /* border: 1px solid blue; */
   height: fit-content;
+  height: 110vh;
   padding: 10vh 0;
   display: flex;
   justify-content: center;
