@@ -150,20 +150,23 @@ const Contact = () => {
               <h3>Contact Information</h3>
               <ul>
                 <li>
-                  <strong>Email:</strong> diddiq88@gmail.com
-                </li>
-                <li>
                   <strong>Phone:</strong> +91 8870081217
                 </li>
-                <li>
-                  <strong>LinkedIn:</strong>{' '}
-                  <a href="linkedin.com/in/mohamed-siddiq-4a512716b">LinkedIn Profile</a>
-                </li>
-                <li>
-                  <strong>GitHub:</strong>{' '}
-                  <a href="https://github.com/MohamedSiddiq88">GitHub Profile</a>
-                </li>
+                
               </ul>
+              <div className='contact-icon-container'>
+
+              <a href='mailto:diddiq88@gmail.com'>
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              </a>
+
+              <a href="https://linkedin.com/in/mohamed-siddiq-4a512716b" target='_blank'>
+                  <i class="fa-brands fa-linkedin contact-icon"></i>
+                  </a>
+                  <a href="https://github.com/MohamedSiddiq88" target='_blank'>
+                    <i class="fa-brands fa-github contact-icon"></i>
+                  </a>
+              </div>
             </div>
               </div>
             </div>

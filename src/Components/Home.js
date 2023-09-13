@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import profileImage from '../passport size phone (1)(1).png';
+import profileImage from '../Images/passport size phone (1)(1).png';
 import "../App.css"
 
 const Home = () => {

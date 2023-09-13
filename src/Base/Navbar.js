@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import logoImage from './my-logo.png'
 
@@ -8,6 +8,20 @@ const Navbar = () => {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+
+ 
+  useEffect(()=>{
+    function resizehandle(){
+      setIsNavOpen(false);
+    }
+    window.addEventListener('resize',resizehandle);
+
+    return()=>{
+      window.removeEventListener('resize',resizehandle);
+    }
+
+  },[])
 
   return (
     <nav className={`navbar navbar-expand-lg  ${isNavOpen ? 'navbar-open' : ''}`}>
@@ -49,6 +63,17 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                onClick={toggleNav}
+              >
+                Skills
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
                 to="services"
                 smooth={true}
                 duration={500}
@@ -79,6 +104,13 @@ const Navbar = () => {
               >
                 Contact
               </Link>
+            </li>
+            <li className='nav-item'>
+              <a 
+              className='nav-link resume-a'
+              href="https://docs.google.com/document/d/1QBfhCl8MBxKIZMkLzsmrLdqdqSP_LbVLbl7zxZaHtBg/edit?usp=sharing" 
+              target="_blank"
+              >Resume</a>
             </li>
           </ul>
         </div>

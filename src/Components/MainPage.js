@@ -7,6 +7,7 @@ import Services from './Services';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Base from '../Base/Base';
+import Skills from './Skills';
 
 const MainPage = () => {
   return (
@@ -14,10 +15,12 @@ const MainPage = () => {
       <Base>
       <Home />
       <About />
+      <Skills />
       <Services />
       <Portfolio />
       <Contact />
       </Base>
+      <div className='view-port-msg'>please rotate your device</div>
     </div>
   );
 };
