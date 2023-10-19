@@ -128,6 +128,10 @@ body {
 }
 
 /* portfolio */
+/* .project-container{
+display: flex;
+flex-direction: row;
+} */
 
 .technology-list{
   /* border: 1px solid blue; */
@@ -165,11 +169,14 @@ height: fit-content;
 
 .project-container{
   /* border: 1px solid blue; */
-  width: 400px;
+  /* width: 400px; */
+  padding-bottom: 2rem;
+  
 }
 
-.project-container h3{
+.project-container h4{
   color: #878787;
+  /* font-weight: bold; */
   /* background-color: rgba(255, 255, 255, 0.08); */
 }
 
