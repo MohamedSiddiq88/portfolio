@@ -53,7 +53,7 @@ const Portfolio = () => {
       description: 'Created a Snake Game with user sign-in, emphasizing user-friendly gaming sessions and score tracking.',
       githubFrontendLink: 'https://github.com/MohamedSiddiq88/project3-snake-game-',
       githubBackendLink: 'https://github.com/MohamedSiddiq88/project3-backend/tree/main',
-      frontendLink: 'https://651c4eef7ac178740480724b--zesty-daifuku-cda52b.netlify.app/',
+      frontendLink: 'https://zesty-daifuku-cda52b.netlify.app/',
       backendLink: 'https://project3-backend-d1f6.onrender.com/',
       technologies: [
         "React",
