@@ -255,7 +255,8 @@ const Portfolio = () => {
                     <div className='container-fluid'>
                       <div className='row'>
                         <h4>{project.name}</h4>
-                        <p>{(windowWidth) < 800 ? (readMore ? <>{project.description.slice(0, 150)}<span className='read-more' onClick={() => setReadMore(!readMore)}>...Read More</span></> : <>{project.description}<span className='read-more' onClick={() => setReadMore(!readMore)}>less</span></>) : <>{project.description}</>}</p>
+                        <p>{<>{project.description}</>}</p>
+                        {/* <p>{(windowWidth) < 800 ? (readMore ? <>{project.description.slice(0, 150)}<span className='read-more' onClick={() => setReadMore(!readMore)}>...Read More</span></> : <>{project.description}<span className='read-more' onClick={() => setReadMore(!readMore)}>less</span></>) : <>{project.description}</>}</p> */}
                         {/* <p>{project.description.slice(0,150)}</p>  */}
                       </div>
                       <div className='row'>
