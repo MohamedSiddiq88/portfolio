@@ -243,7 +243,7 @@ const Portfolio = () => {
           ))}
         </Slider> */}
           {projects.map((project) => (
-            <div className="col-4 project-container" key={project.id}>
+            <div className="col-lg-4 project-container" key={project.id}>
               <div className="row">
                 {/* <div className="col project-image-col">
                   <div className="project-image">
