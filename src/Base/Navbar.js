@@ -108,7 +108,7 @@ const Navbar = () => {
             <li className='nav-item'>
               <a 
               className='nav-link resume-a'
-              href="https://drive.google.com/file/d/12ApEBHqAtB8xUwTzTNvlL-9dlto-9bRp/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1HaTLxEM3vgglOTlhJQOSxFP03mtDlQkg/view?usp=sharing" 
               target="_blank"
               >Resume</a>
             </li>

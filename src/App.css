@@ -370,6 +370,16 @@ textarea.form-input {
     border: 1px solid yellow;
     
   } */
+  .skill-img img{
+  
+    width: 1.5rem;
+  }
+  
+  .skill-content{
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
   .details-container{
     /* border: 1px solid pink; */
    margin: 15px;
@@ -457,4 +467,6 @@ textarea.form-input {
     justify-content: center;
     align-items: center;
   }
+
+  
 }
