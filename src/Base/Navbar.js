@@ -91,7 +91,7 @@ const Navbar = () => {
                 className="nav-link"
                 onClick={toggleNav}
               >
-                Portfolio
+                Projects
               </Link>
             </li>
             <li className="nav-item">

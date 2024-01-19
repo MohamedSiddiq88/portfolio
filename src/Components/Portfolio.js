@@ -189,75 +189,18 @@ const Portfolio = () => {
       <div className="container">
         <div className='row'>
           <h2>My Latest Projects</h2>
-          {/* <Slider {...settings}>
-          {projects.map((project) => (
-            <div className="project-container" key={project.id}>
-              <div className="row">
-                <div className="col project-image-col">
-                  <div className="project-image">
-                    <img src={project.image} alt={project.name} className="img-fluid" />
-                  </div>
-                </div>
-                <div className="col details-container">
-                  <div className="project-details">
-                    <div className='container-fluid'>
-                    <div className='row'>
-                    <h3>{project.name}</h3>
-                    <p>{(windowWidth)<800?(readMore?<>{project.description.slice(0,150)}<span className='read-more' onClick={()=>setReadMore(!readMore)}>...Read More</span></>:<>{project.description}<span className='read-more' onClick={()=>setReadMore(!readMore)}>less</span></>):<>{project.description}</>}</p>
-                    
-                    </div>
-                    <div className='row'>
-                    <div className='col-lg-3'>
-                    <div className="github-links">
-                      <h3>GitHub:</h3>
-                      <ul>
-                        <li><a href={project.githubFrontendLink} target="_blank">Front-end</a></li>
-                        {project.githubBackendLink!==""?<li><a href={project.githubBackendLink} target="_blank">Back-end</a></li>:null}
-                      </ul>
-                    </div>
-                    <div className="deployed-links">
-                      <h3>Deployed:</h3>
-                      <ul>
-                        <li><a href={project.frontendLink} target="_blank">Front-end</a></li>
-                        {project.backendLink!==""?<li><a href={project.backendLink} target="_blank">Back-end</a></li>:null}
-                        
-                      </ul>
-                    </div>
-                    </div>
-
-                    <div className='col'>
-                      <h3>Technologies</h3>
-                      <div className='technology-list'>
-                      {project.technologies.map((ele,ind)=>(
-                        <div key={ind} className='technology-btn'>{ele}</div>
-                      ))}
-                      </div>
-                    </div>
-
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider> */}
+          
           {projects.map((project) => (
             <div className="col-lg-4 project-container" key={project.id}>
               <div className="row">
-                {/* <div className="col project-image-col">
-                  <div className="project-image">
-                    <img src={project.image} alt={project.name} className="img-fluid" />
-                  </div>
-                </div> */}
+                
                 <div className="col details-container">
                   <div className="project-details">
                     <div className='container-fluid'>
                       <div className='row'>
                         <h4>{project.name}</h4>
                         <p>{<>{project.description}</>}</p>
-                        {/* <p>{(windowWidth) < 800 ? (readMore ? <>{project.description.slice(0, 150)}<span className='read-more' onClick={() => setReadMore(!readMore)}>...Read More</span></> : <>{project.description}<span className='read-more' onClick={() => setReadMore(!readMore)}>less</span></>) : <>{project.description}</>}</p> */}
-                        {/* <p>{project.description.slice(0,150)}</p>  */}
+                        
                       </div>
                       <div className='row'>
                         <div className='col'>
@@ -271,12 +214,7 @@ const Portfolio = () => {
 
                         </div>
                         <div className="col deployed-links">
-                          {/* <h5>Deployed:</h5>
-                      <ul>
-                        <li><a href={project.frontendLink} target="_blank">Front-end</a></li>
-                        {project.backendLink!==""?<li><a href={project.backendLink} target="_blank">Back-end</a></li>:null}
                         
-                      </ul> */}
                           <h5>Deployed:</h5>
                           <div>
                             <a href={project.frontendLink} target="_blank">
