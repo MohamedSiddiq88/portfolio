@@ -158,9 +158,19 @@ margin: 0.5rem;
   /* border: 1px solid blue; */
  background-color: #121212;
  border-radius: 0.5rem;
- padding: 30px;
+ padding: 0;
  margin-right: 35px;
 height: fit-content;
+}
+
+.project-details{
+  margin: 30px;
+}
+
+.project-image{
+  width: 100%;
+  height: auto;
+  /* object-fit:; */
 }
 
 .portfolio {

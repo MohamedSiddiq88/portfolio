@@ -191,12 +191,20 @@ const Portfolio = () => {
           <h2>My Latest Projects</h2>
           
           {projects.map((project) => (
+            
             <div className="col-lg-4 project-container" key={project.id}>
               <div className="row">
                 
                 <div className="col details-container">
+                <img src={project.image} className='project-image'/>
+                
                   <div className="project-details">
-                    <div className='container-fluid'>
+                    
+                    <div className=''>
+                      {/* <div>
+                        <img src={project.image} className='project-image'></img>
+                        </div> */}
+
                       <div className='row'>
                         <h4>{project.name}</h4>
                         <p>{<>{project.description}</>}</p>
@@ -251,7 +259,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+
           ))}
+
         </div>
       </div>
     </div>
