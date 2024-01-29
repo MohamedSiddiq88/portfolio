@@ -206,10 +206,20 @@ const Portfolio = () => {
                         <div className='col'>
                           <div className="github-links">
                             <h5>GitHub:</h5>
-                            <ul>
+                            <div className='front-end-and-back-end'>
+                            <a href={project.githubFrontendLink} target="_blank" >
+                              <button className='btn btn-outline-primary'>Front-end</button>
+                            </a>
+                            </div>
+                            <div className='front-end-and-back-end'>
+                            <a href={project.githubBackendLink} target="_blank" >
+                              <button className='btn btn-outline-primary'>Back-end</button>
+                            </a>
+                            </div>
+                            {/* <ul>
                               <li><a href={project.githubFrontendLink} target="_blank">Front-end</a></li>
                               {project.githubBackendLink !== "" ? <li><a href={project.githubBackendLink} target="_blank">Back-end</a></li> : null}
-                            </ul>
+                            </ul> */}
                           </div>
 
                         </div>

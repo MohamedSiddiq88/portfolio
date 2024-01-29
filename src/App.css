@@ -1,3 +1,6 @@
+
+
+
 /* whole page */
 body {
   background-color: #333;
@@ -132,6 +135,9 @@ body {
 display: flex;
 flex-direction: row;
 } */
+.front-end-and-back-end{
+margin: 0.5rem;
+}
 
 .technology-list{
   /* border: 1px solid blue; */
