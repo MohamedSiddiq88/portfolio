@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import project1Image from '../Images/pizza.png';
-import project2Image from '../Images/zoom.png';
-import project3Image from '../Images/urlshortner.png';
-import project4Image from '../Images/piano.png';
+import project1Image from '../Images/snake.png';
+import project2Image from '../Images/studentandteacher.png';
+import project3Image from '../Images/E-commerce.png';
+import project4Image from '../Images/pizzapics.png';
 import project5Image from '../Images/snake.png';
 import project6Image from '../Images/calculator.png';
 import project7Image from '../Images/management.png';
@@ -69,7 +69,7 @@ const Portfolio = () => {
 
     }, {
       id: 2,
-      image: project1Image,
+      image: project2Image,
       name: 'Student and Teacher Profile Management System',
       description: 'Built a streamlined Student and Teacher Profile Management System, enhancing educational administration.',
       githubFrontendLink: 'https://github.com/MohamedSiddiq88/project2',
@@ -90,7 +90,7 @@ const Portfolio = () => {
 
     }, {
       id: 3,
-      image: project1Image,
+      image: project3Image,
       name: 'E-commerce Platform',
       description: 'Created an e-commerce platform with cart management, focusing on a user-friendly design.',
       githubFrontendLink: 'https://github.com/MohamedSiddiq88/shop-project1-',
@@ -112,7 +112,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: project1Image,
+      image: project4Image,
       name: 'Pizza Delivery',
       description: 'Developed an online pizza ordering platform with user-friendly customization and order processing for a convenient dining experience.',
       githubFrontendLink: 'https://github.com/MohamedSiddiq88/pizza-delivery/tree/webcode',
@@ -213,7 +213,7 @@ const Portfolio = () => {
                       <div className='row'>
                         <div className='col'>
                           <div className="github-links">
-                            <h5>GitHub:</h5>
+                            {/* <h5>GitHub:</h5> */}
                             <div className='front-end-and-back-end'>
                             <a href={project.githubFrontendLink} target="_blank" >
                               <button className='btn btn-outline-primary'>Front-end</button>
@@ -223,6 +223,12 @@ const Portfolio = () => {
                             <a href={project.githubBackendLink} target="_blank" >
                               <button className='btn btn-outline-primary'>Back-end</button>
                             </a>
+                            
+                            </div>
+                            <div className='front-end-and-back-end'>
+                              <a href={project.frontendLink} target="_blank">
+                              <button className='btn btn-primary'>Demo</button>
+                            </a>
                             </div>
                             {/* <ul>
                               <li><a href={project.githubFrontendLink} target="_blank">Front-end</a></li>
@@ -231,7 +237,7 @@ const Portfolio = () => {
                           </div>
 
                         </div>
-                        <div className="col deployed-links">
+                        {/* <div className="col deployed-links">
                         
                           <h5>Deployed:</h5>
                           <div>
@@ -240,7 +246,7 @@ const Portfolio = () => {
                             </a>
                           </div>
 
-                        </div>
+                        </div> */}
 
 
                       </div>

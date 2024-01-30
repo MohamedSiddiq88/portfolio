@@ -135,6 +135,15 @@ body {
 display: flex;
 flex-direction: row;
 } */
+
+.github-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 1px solid blue; */
+
+}
+
 .front-end-and-back-end{
 margin: 0.5rem;
 }
@@ -160,7 +169,7 @@ margin: 0.5rem;
  border-radius: 0.5rem;
  padding: 0;
  margin-right: 35px;
-height: fit-content;
+/* height: fit-content; */
 }
 
 .project-details{
@@ -213,13 +222,13 @@ height: fit-content;
 }
 
 
-.project-image{
-  /* border: 1px solid blue; */
+/* .project-image{
+  border: 1px solid blue;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* contact */
 
@@ -396,14 +405,14 @@ textarea.form-input {
     display: flex;
     align-items: center;
   }
-  .details-container{
+  /* .details-container{ */
     /* border: 1px solid pink; */
-   margin: 15px;
+   /* margin: 15px; */
     /* width: 150px; */
     /* height: 100vh; */
-    display: block;
+    /* display: block; */
 
-  }
+  /* } */
   /* .portfolio .img-fluid {
     border: 1px solid yellow;
 

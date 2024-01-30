@@ -38,7 +38,8 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''} `}>
-          <ul className="navbar-nav ml-auto">
+<div>
+<ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link
                 to="home"
@@ -105,14 +106,24 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <li className='nav-item'>
+          </ul>
+
+</div>
+            <div>
+              <ul className="navbar-nav ml-auto">
+              <li className='nav-item'>
               <a 
-              className='nav-link resume-a'
+              className='nav-link '
               href="https://drive.google.com/file/d/1HaTLxEM3vgglOTlhJQOSxFP03mtDlQkg/view?usp=sharing" 
               target="_blank"
-              >Resume</a>
+              >
+                <button className='btn btn-outline-light'>
+                Resume <i class="fa-solid fa-file-lines"></i>
+                </button>
+              </a>
             </li>
-          </ul>
+              </ul>
+            </div>
         </div>
       </div>
     </nav>
