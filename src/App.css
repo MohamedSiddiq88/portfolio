@@ -101,15 +101,15 @@ font-weight: bolder;
 
 /* about */
 .question_animation {
-  animation: scaleUp 0.5s forwards;
+  animation: scaleUp 1s forwards;
 }
 
 .answer_animation {
-  animation: scaleUp 0.5s forwards;
+  animation: scaleUp 1s forwards;
 }
 
 .skill-card-animation{
-  animation:  scaleUp 0.5s linear ;
+  animation:  scaleUp 1s linear ;
 }
 
 .hide{
