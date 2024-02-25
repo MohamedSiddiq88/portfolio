@@ -102,6 +102,7 @@ font-weight: bolder;
 /* about */
 .question_animation {
   animation: scaleUp 1s forwards;
+  will-change: transform;
 }
 
 .answer_animation {
