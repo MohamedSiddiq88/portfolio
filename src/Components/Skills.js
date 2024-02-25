@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SkillCard from './skillcard/SkillCard'
 
 function Skills() {
     const[skillArr,setSkillArr]=useState([
@@ -33,6 +34,7 @@ function Skills() {
 },
 {
     name:"Bootstrap",
+    // imgurl:"https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg"
     imgurl:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
 },
 {
@@ -42,6 +44,10 @@ function Skills() {
 {
     name:"Git",
     imgurl:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+},
+{
+    name:"Reux Toolkit",
+    imgurl:"https://cdn.worldvectorlogo.com/logos/redux.svg"
 },
 // {
 //     name:"",
@@ -74,14 +80,11 @@ function Skills() {
             <div className='col'>
                 <div className='skills-list'>
                 {skillArr.map((ele,ind)=>(
-            <div className='skill-img-content'>
-                <div className='skill-img'>
-                <img src={ele.imgurl}/>
-                </div>
-                <div className='skill-content'>
-                {ele.name}
-                </div>
-            </div>
+            <SkillCard 
+            ele={ele}
+            index={ind}
+            >
+            </SkillCard>
         ))
 
         }

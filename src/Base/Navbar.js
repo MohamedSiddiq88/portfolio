@@ -29,6 +29,9 @@ const Navbar = () => {
         <Link to="home" smooth={true} duration={500} className="navbar-brand">
         <img src={logoImage} alt="Logo" className="logo-image" />
         </Link>
+              <div className='link'>
+
+              </div>
         <button
           className={`navbar-toggler navbar-dark  ${isNavOpen ? 'collapsed' : ''}`}
           type="button"
@@ -41,6 +44,8 @@ const Navbar = () => {
 <div>
 <ul className="navbar-nav ml-auto">
             <li className="nav-item">
+            
+              <div className='link'>
               <Link
                 to="home"
                 smooth={true}
@@ -50,8 +55,11 @@ const Navbar = () => {
               >
                 Home
               </Link>
+              </div>
             </li>
             <li className="nav-item">
+              
+              <div className='link'>
               <Link
                 to="about"
                 smooth={true}
@@ -61,8 +69,11 @@ const Navbar = () => {
               >
                 About
               </Link>
+              </div>
             </li>
             <li className="nav-item">
+              
+              <div className='link'>
               <Link
                 to="skills"
                 smooth={true}
@@ -72,8 +83,11 @@ const Navbar = () => {
               >
                 Skills
               </Link>
+              </div>
             </li>
             <li className="nav-item">
+              
+              <div className='link'>
               <Link
                 to="services"
                 smooth={true}
@@ -83,8 +97,11 @@ const Navbar = () => {
               >
                 Services
               </Link>
+              </div>
             </li>
             <li className="nav-item">
+              
+              <div className='link'>
               <Link
                 to="portfolio"
                 smooth={true}
@@ -94,8 +111,11 @@ const Navbar = () => {
               >
                 Projects
               </Link>
+              </div>
+              
             </li>
             <li className="nav-item">
+              <div className='link'>
               <Link
                 to="contact"
                 smooth={true}
@@ -105,16 +125,12 @@ const Navbar = () => {
               >
                 Contact
               </Link>
+               </div>
             </li>
-          </ul>
-
-</div>
-            <div>
-              <ul className="navbar-nav ml-auto">
-              <li className='nav-item'>
+            <li className='nav-item'>
               <a 
-              className='nav-link '
-              href="https://drive.google.com/file/d/1HaTLxEM3vgglOTlhJQOSxFP03mtDlQkg/view?usp=sharing" 
+              className='nav-link'
+              href="https://drive.google.com/file/d/1DXcgzae8chHoEQ_XzFCSjJV1EnCdTs-z/view?usp=drive_link" 
               target="_blank"
               >
                 <button className='btn btn-outline-light'>
@@ -122,8 +138,10 @@ const Navbar = () => {
                 </button>
               </a>
             </li>
-              </ul>
-            </div>
+          </ul>
+
+</div>
+          
         </div>
       </div>
     </nav>
