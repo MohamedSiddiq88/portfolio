@@ -563,14 +563,14 @@ textarea.form-input {
     display: flex;
     align-items: center;
   }
-  /* .details-container{ */
+  .details-container{
     /* border: 1px solid pink; */
-   /* margin: 15px; */
-    /* width: 150px; */
+   margin: 15px;
+    width: 150px;
     /* height: 100vh; */
-    /* display: block; */
+    display: block;
 
-  /* } */
+  }
   /* .portfolio .img-fluid {
     border: 1px solid yellow;
 
