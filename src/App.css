@@ -108,9 +108,8 @@ font-weight: bolder;
   animation: scaleUp 0.5s forwards;
 }
 
-.skill-card-animation {
-  opacity: 1;
-  transform: scale(1);
+.skill-card-animation{
+  animation:  scaleUp 0.5s linear ;
 }
 
 .hide{
