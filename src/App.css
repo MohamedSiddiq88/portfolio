@@ -101,16 +101,16 @@ font-weight: bolder;
 
 /* about */
 .question_animation {
-  animation: scaleUp 1s forwards;
-  will-change: transform;
+  animation: scaleUp 0.5s forwards;
 }
 
 .answer_animation {
-  animation: scaleUp 1s forwards;
+  animation: scaleUp 0.5s forwards;
 }
 
-.skill-card-animation{
-  animation:  scaleUp 1s linear ;
+.skill-card-animation {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .hide{
@@ -645,6 +645,20 @@ textarea.form-input {
   }
 }
 
+@media (max-weight:500px) {
+  
+  .question_animation {
+    animation: none;
+  }
+  
+  .answer_animation {
+    animation: none;
+  }
+  
+  .skill-card-animation{
+    animation:  none ;
+  }
+}
 
 @media (max-height: 500px) {
   .base{
@@ -657,7 +671,6 @@ textarea.form-input {
     align-items: center;
   }
 
-  
   
 }
 
