@@ -100,17 +100,17 @@ font-weight: bolder;
 }
 
 /* about */
-.question_animation {
+/* .question_animation {
   animation: scaleUp 0.5s forwards;
 }
 
 .answer_animation {
   animation: scaleUp 0.5s forwards;
-}
+} */
 
-.skill-card-animation{
+/* .skill-card-animation{
   animation:  scaleUp 0.5s linear ;
-}
+} */
 
 .hide{
   visibility: hidden;
@@ -646,17 +646,21 @@ textarea.form-input {
 
 @media (max-weight:500px) {
   
-  .question_animation {
-    animation: none;
+  /* .question_animation {
+    opacity: 1;
+    transform: scale(1);
   }
   
   .answer_animation {
-    animation: none;
+    opacity: 1;
+    transform: scale(1);
   }
   
   .skill-card-animation{
-    animation:  none ;
-  }
+    opacity: 1;
+    transform: scale(1);
+    animation: none;
+  } */
 }
 
 @media (max-height: 500px) {
@@ -671,6 +675,20 @@ textarea.form-input {
   }
 
   
+}
+
+@media (min-width: 900px) {
+  .question_animation {
+    animation: scaleUp 0.5s forwards;
+  }
+  
+  .answer_animation {
+    animation: scaleUp 0.5s forwards;
+  }
+  
+.skill-card-animation{
+  animation:  scaleUp 0.5s linear ;
+}
 }
 
 @media (max-width: 767px) {
