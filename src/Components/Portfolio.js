@@ -189,7 +189,32 @@ const Portfolio = () => {
       <div className="container">
         <div className='row'>
           <h2>My Latest Projects</h2>
-          
+
+          <div className='flex-container'>
+          <div className='common-credentials-container'>
+          <table>
+  <tr>
+    <th colspan="2">
+      <h5>Common Credentials</h5>
+    </th>
+  </tr>
+  <tr>
+    <td>Id:</td>
+    <td>
+      <span data-toggle="tooltip" title="Click to Copy" onClick={()=>window.navigator.clipboard.writeText("sid@mymail.com")}>sid@mymail.com</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Password:</td>
+    <td>
+      <span data-toggle="tooltip" title="Click to Copy" onClick={()=>window.navigator.clipboard.writeText("mypass@333")}>mypass@333</span>
+    </td>
+  </tr>
+</table>
+
+          </div>
+          </div>
+
           {projects.map((project) => (
             
             <div className="col-lg-4 project-container" key={project.id}>

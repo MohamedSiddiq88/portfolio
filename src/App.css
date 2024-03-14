@@ -5,6 +5,7 @@
 body {
   background-color: #333;
   color: #fff;
+  cursor:default;
   /* font-family: 'Poppins'; */
 }
 
@@ -329,8 +330,72 @@ margin: 0.5rem;
   margin: 30px;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+ 
+}
+
+.common-credentials-container{
+  margin: 1rem auto;
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 0.5rem;
+ box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+ outline: 1px dashed;
+
+  /* width: 350px; */
+
+}
+
+table,tr,th,td{
+  /* border: 1px solid; */
+  text-align: right;
+}
 
 
+
+.common-credentials-container h5{
+
+  font-weight: bolder;
+  margin: 0.5re 1rem 0;
+  /* border: 1px solid; */
+  text-align: center;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /* border-top-left-radius: 0.5rem; */
+  /* border-top-right-radius: 0.5rem; */
+}
+
+td:nth-child(odd) {
+  text-align: right;
+  padding-right: 10px; 
+}
+
+td:nth-child(even) {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.common-credentials-container:hover{
+  cursor: pointer;
+}
+
+.common-credentials-container span{
+  background-color:#333;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+margin: 0rem;
+  /* margin-bottom: 1rem; */
+  display:inline-block;
+  width: 100%;
+}
+
+.common-credentials-container td{
+  padding: 0.5rem;
+}
 
 .project-image{
   width: 100%;
@@ -584,6 +649,7 @@ textarea.form-input {
     border: 1px solid red;
   } */
 
+  
   .project-image-col{
     display: none;
   }
